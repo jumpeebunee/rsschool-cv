@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap');
 
+:root {
+    --main-color: #CC3931;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -35,7 +39,7 @@ body::before {
 body::after {
     content: '';
     position: absolute;
-    background-color: #CC3931;
+    background-color: var(--main-color);
     height: 50%;
     left: 0;
     bottom: 0;
@@ -56,6 +60,10 @@ body::after {
     max-width: 784px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.main {
+    padding-bottom: 55px;
 }
 
 /* header */
@@ -86,7 +94,7 @@ body::after {
     bottom: -3px;
     width: 0px;
     height: 2px;
-    background-color: #CC3931;
+    background-color: var(--main-color);
     transition: width ease-in .3s;
 
 }
@@ -96,4 +104,35 @@ body::after {
     transform: none;
     width: 100%;
 
+}
+
+/* section-about */
+
+.section-about__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-about__description {
+    max-width: 309px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 143.52%;
+    color: #AD4844;
+}
+
+.section-about__background {
+    width: 100%;
+    max-width: 377px;
+    height: 420px;
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.section-about__background-img {
+    position: absolute;
+    bottom: 0;
+    right: 33px;
 }
