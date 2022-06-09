@@ -16,6 +16,8 @@ li {
 }
 
 body {
+    padding-top: 150px;
+    padding-bottom: 150px;
     position: relative;
 }
 
@@ -51,6 +53,47 @@ body::after {
 }
 
 .container {
+    max-width: 784px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* header */
+
+.header {
+    padding: 35px 0px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.header__nav-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    position: relative;
+}
+
+.header__nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    width: 0px;
+    height: 2px;
+    background-color: #CC3931;
+    transition: width ease-in .3s;
+
+}
+
+.header__nav-link:hover::before {
+    content: '';
+    transform: none;
+    width: 100%;
+
 }
