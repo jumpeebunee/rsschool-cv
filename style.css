@@ -62,8 +62,16 @@ body::after {
     margin-right: auto;
 }
 
-.main {
-    padding-bottom: 55px;
+.heading {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 112.02%;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.footer {
+    padding-top: 55px;
 }
 
 /* header */
@@ -135,4 +143,33 @@ body::after {
     position: absolute;
     bottom: 0;
     right: 33px;
+}
+
+/* contacts */
+
+.section-contacts {
+    margin-top: -100px;
+    padding-top: 175px;
+    padding-bottom: 70px;
+    background-color: #F0F0F0;;
+}
+
+.section-contacts__container {
+    max-width: 708px;
+}
+
+.section-contacts__content-about {
+    max-width: 512px;
+}
+
+.section-contacts__heading {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 112.02%;
+}
+
+.section-contacts__job {
+    display: block;
+    font-size: 23px;
+    margin-top: 25px;
 }
