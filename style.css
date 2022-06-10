@@ -251,3 +251,33 @@ body::after {
     margin-bottom: 20px;
 }
 
+/* footer */
+
+.footer-container {
+    background-color: var(--main-color);
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.footer__github {
+    display: flex;
+    align-items: center;
+}
+
+.footer__github-description {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 112%;
+    color: white;
+}
+
+.footer__small {
+    margin-right: 40px;
+    font-size: 12px;
+    color: white;
+}
