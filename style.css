@@ -253,6 +253,7 @@ body::after {
 
 .section-main__link {
     transition: opacity ease-in .2s;
+    border-bottom: 1px solid black;
 }
 
 .section-main__link:hover {
